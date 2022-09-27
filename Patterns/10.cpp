@@ -10,7 +10,7 @@ int main()
         {
 
             cout << n;
-            n = n - j;
+            n = n - 1;
         }
         cout << endl;
     }
