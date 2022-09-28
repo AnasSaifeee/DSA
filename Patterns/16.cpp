@@ -4,12 +4,12 @@ int main()
 {
 
     char str;
-    int i, j;
-    for (i = 1; i <= 3; i++)
+    int i, j, n = 0;
+    for (i = 0; i <= 3; i++)
     {
-        for (j = 0; j <= 2; j++)
+        for (j = 0; j <= i; j++)
         {
-            str = 'A' + j;
+            str = 'A' + 3 - i + j;
             cout << str;
         }
         cout << endl;
