@@ -29,7 +29,7 @@ int main()
     Node* node3=new Node(30);
     node2->next=node3;
     Node* head=node1;
-
+    delete_first(&head);
 
     while(head!=NULL)
     {
