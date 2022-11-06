@@ -1,9 +1,9 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
-int firstOccurrence(int a[],int size,int key)
+int firstOccurrence(vector<int>a,int key)
 {
-    int s=0,e=size-1;
+    int s=0,e=a.size()-1;
     int mid=s+(e-s)/2;
     int ans=-1;
     while(s<=e)
@@ -25,9 +25,9 @@ int firstOccurrence(int a[],int size,int key)
     }
     return ans;
 }
-int lastOccurrence(int a[],int size,int key)
+int lastOccurrence(vector<int>a,int key)
 {
-    int s=0,e=size-1;
+    int s=0,e=a.size()-1;
     int mid=s+(e-s)/2;
     int ans=-1;
     while(s<=e)
@@ -52,8 +52,8 @@ int lastOccurrence(int a[],int size,int key)
 
 int main()
 {
-    int a[6]={1,2,3,3,4,5};
-    int size=6,key=3;
-    cout<<"first occurence : "<<firstOccurrence(a,6,3)<<endl;
-    cout<<"last occurrence : "<<lastOccurrence(a,6,3);
+    vector<int>a={0,0,1,1,1,2,2,3,4};
+    int size=9,key=0;
+    cout<<"first occurence : "<<firstOccurrence(a,0)<<endl;
+    cout<<"last occurrence : "<<lastOccurrence(a,0);
 }
